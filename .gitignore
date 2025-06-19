@@ -1,0 +1,10 @@
+# Archivos ignorados
+__pycache__/
+*.log
+*.pyc
+*.db
+*.jpg
+*.png
+env/
+venv/
+.DS_Store
