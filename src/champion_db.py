@@ -1,5 +1,5 @@
 import json
-import request
+import requests
 
 class ChampionDatabase:
     def __init__(self):
@@ -11,7 +11,7 @@ class ChampionDatabase:
         url = f"https://ddragon.leagueoflegends.com/cdn/{version}/data/es_ES/champion.json"
 
         try:
-            response = request.get(url)
+            response = requests.get(url)
             data = response.json()
             return {champ["key"]: champ["name"] for champ in data["data"].values()}
         except:
